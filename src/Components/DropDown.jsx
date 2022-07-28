@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+/* eslint-disable */
+import {  useState } from 'react'
 export default function DropDown({ height, padding, visible }) {
     const [li1,setLi1] = useState(["about","menu","gallery","accolades","contact"])
     return (
