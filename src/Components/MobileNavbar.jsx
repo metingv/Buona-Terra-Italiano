@@ -1,5 +1,5 @@
 import '../styles/Component.scss';
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import Dropdown from "./DropDown.jsx";
 
 
