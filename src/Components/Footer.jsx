@@ -1,7 +1,4 @@
 import '../styles/Component.scss';
-import { useEffect, useState } from 'react';
-
-
 function Footer() {
 
 
