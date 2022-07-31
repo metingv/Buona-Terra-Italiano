@@ -1,7 +1,6 @@
 import '../styles/Component.scss';
 import { useEffect, useState  } from 'react';
 import Audio from "./Audio"
-import img from '../images/loqo.png'
 import MobileNavbar from './MobileNavbar';
 
 function Navbar() {
@@ -14,11 +13,11 @@ function Navbar() {
       .addEventListener('change', (e) => setMatches(e.matches))
   }, [])
   return (
-    <section>
-    <div className='Carousel'> </div>
+    <>
+
     <div className="Navbar">
-      <img src={img} alt="loqo"></img>
-    { matches  && (
+      <img src={"../imgs/loqo.png"} alt="loqo"></img>
+    { !matches  && (
         <ul>
         <li>
          <a href>
@@ -48,7 +47,7 @@ function Navbar() {
     </ul>
     )    
     }
-    { !matches  && (
+    { matches  && (
      <>
      <MobileNavbar />
      </>
@@ -60,7 +59,7 @@ function Navbar() {
        <button>Reservation</button>
        </figure>
     </div>
-    </section>
+    </>
   
     
   );

@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: Abel-Regular, Arial, Helvetica, sans-serif;
+
+}
+
 @font-face {
     font-family: 'CormorantGaramond-SemiBoldItalic';
     src: local('CormorantGaramond-SemiBoldItalic'), url(../CormorantGaramondFonts/CormorantGaramond-SemiBoldItalic.ttf) format('truetype');

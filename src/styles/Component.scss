@@ -1,19 +1,4 @@
-section{
-position: relative;
-
-.Carousel{
-    position: absolute;
-    width: 100vw;
-    height: 650px;
-    background-image: url("../images/1.jpg"); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    }
-}
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 .Navbar{
     position: absolute;
     display: flex;
@@ -209,5 +194,230 @@ span{
     }
    }
     }
+
+}
+
+.Footer{
+  background: #2f2f33;
+  color: #7f7f83;
+  font-size: 16px;
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 330px) {
+    font-size: 12px;
+  }
+  .FooterTop{
+    display: grid;
+    grid-gap: 20px 3%;  // % bug oldu 20px etdim
+    grid-template-columns: repeat(4,auto);
+    padding: 60px 40px 60px 40px;
+    @media screen and (max-width: 1286px) {
+      grid-template-columns: repeat(2,auto);
+    }
+    @media screen and (max-width: 804px) {
+      padding: 30px 15px 60px 15px;
+    }
+    @media screen and (max-width: 698px) {
+      grid-template-columns: repeat(1,auto);
+    }
+  
+
+
+
+    figure{
+      line-height: 26px;
+      display: flex;
+      flex-direction: column;
+      &:last-child{
+        @media screen and (max-width: 698px) {
+          margin-top: -19px;
+         }
+ 
+        h1{
+          visibility: hidden;
+          @media screen and (max-width: 698px) {
+           display: none;
+          }
+        }
+      }
+      div{
+        position: relative;
+        padding-left: 80px;
+        @media screen and (max-width: 400px) {
+          padding-left: 70px;
+        }
+      
+      }
+      h1{
+        font-size: 20px;
+        padding-bottom: 15px;
+        color: #a99a6f;
+        @media screen and (max-width: 400px) {
+          font-size: 16px!important;
+          
+        }
+     
+      }
+      span{
+        position: absolute;
+        color: #a99a6f;
+        width: 80px;
+        margin-left: -80px;
+        @media screen and (max-width: 400px) {
+          margin-left: -70px;
+        }
+      
+      }
+      img{
+        width: 102px;
+        height: 119px;
+        
+      }
+    }
+  }
+  .FooterBottom{
+    padding: 20px 0px;
+    border-top: 1px solid #39393d;
+    display: grid;
+    grid-gap:20px 100px;
+    grid-template-columns: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 698px) {
+      grid-template-columns: repeat(1,auto);
+     }
+
+    .socialnav{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2,auto);
+      font-size: 20px;
+      @media screen and (max-width: 698px) {
+        order: -1;
+       }
+  
+  
+
+      i{
+        &:hover{
+          color:#c2ae77;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.Component1{
+  padding: 100px 0px;
+  text-align: center;
+  position: relative;
+  background:  #E6ECEC;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap:25px;
+
+
+  &::before{
+    height: 289px;
+    width: 452px;
+    content: "";
+    position: absolute;
+    right: 0%;
+    top:0%;
+    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/flower-bg1.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;     
+    @media screen and (max-width: 500px) {
+      height: 289px;
+      width: 300px;
+     }
+  }
+  &::after{
+    height: 289px;
+    width: 452px;
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom:0%;
+    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/flower-bg2.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    @media screen and (max-width: 500px) {
+      height: 289px;
+      width: 300px;
+     }
+  }
+  img{
+    margin-top: 25px;
+    justify-self: center; 
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  
+  }
+
+ h1{
+  position: relative;
+  font-family: CormorantGaramond-SemiBoldItalic;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 40px;
+  color: #96875d;
+  &::before{
+    content:"";
+    position:absolute;
+    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/title-bg.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 68px;
+    height: 15px;
+    top:120%;
+    left: 48%;
+  }
+ }
+ p{
+  line-height: 30px;
+  // margin-top: 20px;
+  font-size: 17px;
+  color:#252525;
+  font-family: 'Abel', Arial, Helvetica, sans-serif;
+  padding: 0% 10%;
+ }
+ button{
+    justify-self: center;  // align items center not working because of 
+    z-index: 2;
+    font-family: ProximaNova-Medium;
+    text-transform: uppercase;
+    color: #a99a6f;
+    width: 140px;
+    overflow: hidden;
+    background: none;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 7px 25px 7px;
+    border: 1px solid #a99a6f;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    &:hover{
+      color:#fff;
+      background: #9d8f68;
+      outline: none;
+      cursor: pointer;
+    }
+ }
+}
+
+.Component2{
 
 }
