@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   outline: none;
@@ -7,22 +9,120 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: Abel-Regular, Arial, Helvetica, sans-serif;
-
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @font-face {
-    font-family: 'CormorantGaramond-SemiBoldItalic';
-    src: local('CormorantGaramond-SemiBoldItalic'), url(../CormorantGaramondFonts/CormorantGaramond-SemiBoldItalic.ttf) format('truetype');
+  font-family: 'CormorantGaramond-SemiBoldItalic';
+  src: local('CormorantGaramond-SemiBoldItalic'), url(../CormorantGaramondFonts/CormorantGaramond-SemiBoldItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-BoldItalic';
+  src: local('CormorantGaramond-BoldItalic'), url(../CormorantGaramondFonts/CormorantGaramond-BoldItalic.ttf) format('truetype');
+}
+
+.GlobalComponent{
+  padding: 100px 0px;
+  text-align: center;
+  position: relative;
+  background:  #E6ECEC;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-gap:25px;
+  &::before{
+    height: 289px;
+    width: 452px;
+    content: "";
+    position: absolute;
+    right: 0%;
+    top:0%;
+    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/flower-bg1.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;     
+    @media screen and (max-width: 500px) {
+      height: 289px;
+      width: 300px;
+     }
+  }
+  &::after{
+    height: 289px;
+    width: 452px;
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom:0%;
+    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/flower-bg2.png"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    @media screen and (max-width: 500px) {
+      height: 289px;
+      width: 300px;
+     }
+  }
+}
+
+.Globalcss {
+ 
+
+  button {
+    justify-self: center; // align items center not working because of 
+    z-index: 2;
+    text-transform: uppercase;
+    color: #a99a6f;
+    width: 140px;
+    overflow: hidden;
+    background: none;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 7px 25px 7px;
+    border: 1px solid #a99a6f;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+
+    &:hover {
+      color: #fff;
+      background: #9d8f68;
+      outline: none;
+      cursor: pointer;
+    }
   }
 
-  @font-face {
-    font-family: 'CormorantGaramond-BoldItalic';
-    src: local('CormorantGaramond-BoldItalic'), url(../CormorantGaramondFonts/CormorantGaramond-BoldItalic.ttf) format('truetype');
+  p {
+    line-height: 30px;
+    font-size: 17px;
+    color: #252525;
+    font-family: 'Abel', Arial, Helvetica, sans-serif;
   }
 
- 
- 
-  
-  
+  h1 {
+    position: relative;
+    font-family: CormorantGaramond-SemiBoldItalic;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 40px;
+    color: #96875d; 
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/title-bg.png"); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 68px;
+      height: 15px
+    }
+  }
+}
+
+.noborder{
+  border:0px!important;
+}

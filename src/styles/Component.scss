@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 .Navbar{
     position: absolute;
     display: flex;
@@ -88,16 +89,61 @@
             }
     }
    
+
  ul{
     display: flex;
     margin-bottom: 20px;
-
-  
      li{ 
+      //submenu
+
+      .submenu{
+        position: absolute;
+        display: none;
+        background: #fff;
+        width: 120px;
+        top: 100%;
+        right: -26%;
+        li{
+          font-family: 'Abel', sans-serif;
+          color: black;
+          font-size: 14px;
+          padding: 0px;
+          transition: 0.5s all;
+
+          &:hover{
+            background: #a99a6f;
+            color:#fff;
+          }
+          a{
+            text-align: left;
+            color: black;
+            border-bottom: 1px solid #a99a6f;
+            margin: 0px 20px;
+            padding: 10px 0px;
+            transition: 0.5s all;
+            width: 100%;        
+            &:hover{
+              color:#fff;
+            }
+            &::before{
+              display: none;
+            }
+          }
+        }
+    
+      }
+      &:nth-child(2){
+        position: relative;
+        &:hover{
+          .submenu{
+            display: block;
+          }
+        }
+      }
          text-transform: uppercase;
          display: flex;
          font-size: 15px;
-         padding: 0px 20px;
+         padding:  10px 20px;
          color:#fff;
          @media screen and (max-width: 956px) {
             padding: 0px 10px;
@@ -109,7 +155,8 @@
          }
          a{
              position: relative;
-
+             color:#fff;
+             text-decoration: none;
              &::before{
                 content: '';
                 position: absolute;
@@ -201,6 +248,9 @@ span{
   background: #2f2f33;
   color: #7f7f83;
   font-size: 16px;
+  a{
+    color: #7f7f83;
+  }
   @media screen and (max-width: 400px) {
     font-size: 14px;
   }
@@ -311,113 +361,109 @@ span{
   }
 }
 
+
+
 .Component1{
-  padding: 100px 0px;
-  text-align: center;
-  position: relative;
-  background:  #E6ECEC;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-gap:25px;
-
-
-  &::before{
-    height: 289px;
-    width: 452px;
-    content: "";
-    position: absolute;
-    right: 0%;
-    top:0%;
-    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/flower-bg1.png"); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;     
-    @media screen and (max-width: 500px) {
-      height: 289px;
-      width: 300px;
-     }
-  }
-  &::after{
-    height: 289px;
-    width: 452px;
-    content: "";
-    position: absolute;
-    left: 0%;
-    bottom:0%;
-    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/flower-bg2.png"); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    @media screen and (max-width: 500px) {
-      height: 289px;
-      width: 300px;
-     }
-  }
   img{
     margin-top: 25px;
     justify-self: center; 
     width: 80px;
     height: 80px;
-    object-fit: contain;
-  
+    object-fit: contain;  
   }
-
  h1{
-  position: relative;
-  font-family: CormorantGaramond-SemiBoldItalic;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-size: 40px;
-  color: #96875d;
   &::before{
-    content:"";
-    position:absolute;
-    background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/title-bg.png"); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    width: 68px;
-    height: 15px;
     top:120%;
     left: 48%;
   }
  }
  p{
-  line-height: 30px;
-  // margin-top: 20px;
-  font-size: 17px;
-  color:#252525;
-  font-family: 'Abel', Arial, Helvetica, sans-serif;
-  padding: 0% 10%;
+  padding: 0% 5%;
  }
- button{
-    justify-self: center;  // align items center not working because of 
-    z-index: 2;
-    font-family: ProximaNova-Medium;
-    text-transform: uppercase;
-    color: #a99a6f;
-    width: 140px;
-    overflow: hidden;
-    background: none;
-    line-height: 20px;
-    font-size: 13px;
-    padding: 7px 25px 7px;
-    border: 1px solid #a99a6f;
-    -webkit-transition: all 0.4s ease-out;
-    -moz-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    -ms-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    &:hover{
-      color:#fff;
-      background: #9d8f68;
-      outline: none;
-      cursor: pointer;
-    }
- }
+
 }
 
 .Component2{
+  background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/05-resize-to-1400-x-1000-01.jpg"); 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;  
+  width: 100%;   
+  padding: 100px 5%;
+  text-align: center;
+  @media screen and (max-width:768px){
+    padding: 7% 0%;
+  }
+ 
+  figure{
+   background: rgba(255, 255, 255, 0.6)  ;
+   width: 400px;
+   padding: 70px 60px;
+   display: grid;
+   grid-gap:25px;
+   @media screen and (max-width:768px){
+    width: 90%;
+    margin: auto;
+    padding: 40px 30px;
+  }
+  @media screen and (max-width:400px){
+    padding: 20px 15px;
+  }
+  
+  }
 
+  h1{
+    &::before{
+      top:120%;
+      left: 39%;
+    }
+   }
+   p{
+    margin-top: 25px;
+   }
+}
+
+.Component3{
+  h1{
+    &::before{
+      top:120%;
+      left: 48%;
+    }
+  }
+
+  button{
+    width: 150px!important;
+  }
+  p{
+  margin-top: 25px;
+  padding: 0px 15px;
+  }
+  figure{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,auto);
+    grid-gap:25px;
+    @media screen and (max-width:768px){
+      grid-template-columns: repeat(1,auto);
+    }
+    img{
+      width: 360px;
+      height: 247px;
+      object-fit: contain;
+      @media screen and (max-width:1195px){
+        width: 300px;
+        height: 230px;
+      }
+      @media screen and (max-width:982px){
+        width: 220px;
+        height: 180px;
+      }
+      @media screen and (max-width:768px){
+        width: 95vw;
+        height: 55vw;
+        object-fit: cover;
+      }
+    }
+  }
 }

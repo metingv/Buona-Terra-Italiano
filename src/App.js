@@ -1,17 +1,31 @@
 
 import './App.scss';
-import Slider from './Components/Slider/Slider'
-import Footer from './Components/Footer'
-import Component1 from './Components/Component1';
-import Component2 from './Components/Component2';
+import './styles/Pages.scss';
+import './styles/Component.scss';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import About from './Pages/About';
+import  Menu from './Pages/Menu';
+import  Gallery from './Pages/Gallery';
+import  Accolades from './Pages/Accolades';
+import  Contact from './Pages/Contact';
+import  Home from './Pages/Home';
+
 function App() {
   return (
-    <> 
-      <Slider />
-      <Component1 />
-      <Component2 />
-      <Footer />
-    </>
+    <BrowserRouter>  
+        <Routes>
+             <Route path="/" element={<Home />} />
+             <Route path="/about" element={<About />} />
+             <Route path="/menu" element={<Menu />} />
+             <Route path="/gallery" element={<Gallery />} />
+             <Route path="/accolades" element={<Accolades />} />
+             <Route path="/contact" element={<Contact />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 

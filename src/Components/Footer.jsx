@@ -1,7 +1,4 @@
-import '../styles/Component.scss';
 function Footer() {
-
-
     return (
         <>
             <div className='Footer'>
@@ -28,19 +25,14 @@ function Footer() {
 
                 </div>
                 <div className="FooterBottom">
-                Copyright © 2022 Buona Terra. All rights reserved.
+                Copyright © 2022 Buona Terra Italiano. All rights reserved.
                 <div className="socialnav">
                 <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/buonaterrasg/">  <i class="fa-brands fa-instagram"></i> </a>
                 </div>
                 </div>
             </div>
-
-
-
         </>
-
-
     );
 }
 

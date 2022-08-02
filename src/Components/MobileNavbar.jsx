@@ -1,4 +1,3 @@
-import '../styles/Component.scss';
 import {  useState } from 'react';
 import Dropdown from "./DropDown.jsx";
 

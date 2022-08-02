@@ -1,0 +1,69 @@
+.About{
+ 
+    header{
+        background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/accolades-banner.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        height: 450px;
+        position: relative;
+    }
+
+  section{
+    &::after{
+        display: none!important;    
+      }
+      h1{
+
+        &::before{
+            top:120%;
+            left: 47.8%;
+        }
+      }
+      figure{
+        margin-top: 25px;
+      }
+      
+  }
+    
+}
+
+.Gallery{
+    header{
+        background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/gallery-banner.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        height: 450px;
+        position: relative;
+    }
+
+
+}
+
+.Contact{
+    header{
+        background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/reservation-banner.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        height: 450px;
+        position: relative;
+    }
+       
+}
+
+.Accolades{
+    header{
+        background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/accolades-banner.jpg"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        height: 450px;
+        position: relative;
+    }   
+}
+
+.Menu{
+    
+}
