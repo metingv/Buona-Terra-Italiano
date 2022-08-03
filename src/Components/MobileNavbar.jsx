@@ -15,11 +15,13 @@ function MobileNavbar() {
                         close
                     </span>
                 }
-                {!toggle && (
+                {/* {!toggle && (
                     <>
-                        <Dropdown />
+                        <Dropdown toggle={toggle} /> 
+                        isin icine animasiya girende bezen serti render istifade uygun deyil display none block etdiyi ucun
                     </>
-                )}
+                )} */}
+                   <Dropdown toggle={toggle} />
 
 
 
