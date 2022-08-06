@@ -253,8 +253,10 @@
     transition: transform 1s ease-in-out;
     transform-origin: top; // istiqamet yuxardan asagi default her iki terefden ortayadi
      overflow: hidden;
+
     .submenu {  
       margin: 0px;
+
 
       li:nth-child(2) {
         display: grid;
@@ -480,45 +482,14 @@
 
 .Component2 {
   background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/05-resize-to-1400-x-1000-01.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  padding: 100px 5%;
-  text-align: center;
-
-  @media screen and (max-width:768px) {
-    padding: 7% 0%;
-  }
-
-  figure {
-    background: rgba(255, 255, 255, 0.6);
-    width: 400px;
+  figure{
     padding: 70px 60px;
-    display: grid;
-    grid-gap: 25px;
-
-    @media screen and (max-width:768px) {
-      width: 90%;
-      margin: auto;
-      padding: 40px 30px;
-    }
-
-    @media screen and (max-width:400px) {
-      padding: 20px 15px;
-    }
-
   }
-
-  h1 {
-    &::before {
-      top: 120%;
-      left: 39%;
+  h1{
+    &::before{
+      top: 140%;
+      left: 38%;
     }
-  }
-
-  p {
-    margin-top: 25px;
   }
 }
 

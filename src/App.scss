@@ -19,12 +19,28 @@ body {
 }
 
 @font-face {
+  font-family: 'CormorantGaramond-Italic';
+  src: local('CormorantGaramond-Italic'), url(../CormorantGaramondFonts/CormorantGaramond-Italic.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'CormorantGaramond-BoldItalic';
   src: local('CormorantGaramond-BoldItalic'), url(../CormorantGaramondFonts/CormorantGaramond-BoldItalic.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'CormorantGaramond-Medium';
+  src: local('CormorantGaramond-Medium'), url(../CormorantGaramondFonts/CormorantGaramond-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-MediumItalic';
+  src: local('CormorantGaramond-MediumItalic'), url(../CormorantGaramondFonts/CormorantGaramond-MediumItalic.ttf) format('truetype');
+}
+
+
 .GlobalComponent{
-  padding: 100px 0px;
+  padding: 100px 5%;
   text-align: center;
   position: relative;
   background:  #E6ECEC;
@@ -64,6 +80,118 @@ body {
       width: 300px;
      }
   }
+  
+}
+
+.GlobalComponent1{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 5%;
+  text-align: center;
+  @media screen and (max-width:768px) {
+    padding: 7% 0%;
+  }
+
+  figure {
+    background: rgba(255, 255, 255, 0.6);
+    width: 400px;
+    padding: 70px 30px;
+    display: grid;
+    grid-gap: 25px;
+
+    @media screen and (max-width:768px) {
+      width: 90%;
+      margin: auto;
+      padding: 40px 30px;
+    }
+
+    @media screen and (max-width:400px) {
+      padding: 20px 15px;
+    }
+
+  }
+
+  h1 {
+    font-family: CormorantGaramond-MediumItalic;
+    position: relative;
+    color:#96875d;
+    font-size: 28px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/title-bg.png"); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 68px;
+      height: 15px;
+      top: 120%;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+  }
+  .h22{
+    margin-top: 0px;
+  }
+  h2 {
+    font-family: CormorantGaramond-SemiBoldItalic;
+    position: relative;
+    color:#96875d;
+    font-size: 28px;
+    margin-top: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("https://www.buonaterra.com.sg/wp-content/themes/buona/images/title-bg.png"); 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 68px;
+      height: 15px;
+      top: 120%;
+      left: 38%;
+    }
+  }
+
+  p {
+    font-family: "Abel", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 50px;
+    line-height: 1.6;
+  }
+  span{
+    font-family: "Abel", Arial, Helvetica, sans-serif;
+    font-size: 12.5px;
+    color: #252525;
+    line-height: 1.6;
+  }
+  button {
+    justify-self: center; // align items center not working because of 
+    z-index: 2;
+    text-transform: uppercase;
+    color: #a99a6f;
+    overflow: hidden;
+    background: none;
+    line-height: 20px;
+    font-size: 13px;
+    padding: 7px 25px 7px;
+    border: 1px solid #a99a6f;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+
+    &:hover {
+      color: #fff;
+      background: #9d8f68;
+      outline: none;
+      cursor: pointer;
+    }
+  }
 }
 
 .Globalcss {
@@ -100,6 +228,7 @@ body {
     font-size: 17px;
     color: #252525;
     font-family: 'Abel', Arial, Helvetica, sans-serif;
+    margin-top: 25px;
   }
 
   h1 {
@@ -109,6 +238,9 @@ body {
     line-height: 1.2;
     font-size: 40px;
     color: #96875d; 
+    @media screen and (max-width:768px) {
+      font-size: 30px;
+    }
 
     &::before {
       content: "";
@@ -118,7 +250,12 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       width: 68px;
-      height: 15px
+      height: 15px;
+      top: 120%;
+      left: 50%;
+      transform: translateX(-50%)
+
+
     }
   }
 }
@@ -126,6 +263,13 @@ body {
 .noborder{
   border:0px!important;
 }
+
+.nobefore{
+    &::before{
+      display: none!important;
+    }
+}
+
 
 
 
