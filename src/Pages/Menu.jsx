@@ -1,5 +1,8 @@
 import Navbar from "../Components/Navbar";
 import Footer from '../Components/Footer'
+import menu1 from '../docs/menu.pdf' 
+import menu2 from '../docs/menu2.pdf' 
+import menu3 from '../docs/menu3.pdf' 
 function Menu() {
     return (
         <>
@@ -10,9 +13,9 @@ function Menu() {
                 <div className="GlobalComponent1 Component1a" >
                     <figure>
                         <h1>CLICK FOR MENU</h1>
-                        <p>LUNCH</p>
-                        <p>DINNER</p>
-                        <p>WINE LIST</p>
+                        <p><a href={menu1} target="_blank" alt="">LUNCH</a></p>
+                        <p><a href={menu2} target="_blank" alt="">DINNER</a></p>
+                        <p><a href={menu3} target="_blank" alt="">WINE LIST</a></p>
                     </figure>
                 </div>
                 <section className="Globalcss GlobalComponent">
