@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Navbar from "../Components/Navbar";
 import Footer from '../Components/Footer'
 import menu1 from '../docs/menu.pdf' 
@@ -13,9 +14,9 @@ function Menu() {
                 <div className="GlobalComponent1 Component1a" >
                     <figure>
                         <h1>CLICK FOR MENU</h1>
-                        <p><a href={menu1} target="_blank" alt="">LUNCH</a></p>
-                        <p><a href={menu2} target="_blank" alt="">DINNER</a></p>
-                        <p><a href={menu3} target="_blank" alt="">WINE LIST</a></p>
+                        <p><a href={menu1} target="_blank" >LUNCH</a></p>
+                        <p><a href={menu2} target="_blank" >DINNER</a></p>
+                        <p><a href={menu3} target="_blank" >WINE LIST</a></p>
                     </figure>
                 </div>
                 <section className="Globalcss GlobalComponent">
