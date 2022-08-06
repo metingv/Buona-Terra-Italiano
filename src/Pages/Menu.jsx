@@ -12,7 +12,7 @@ function Menu() {
                     <Navbar />
                 </header>
                 <div className="GlobalComponent1 Component1a" >
-                    <figure>
+                    <figure id="ourmenu">
                         <h1>CLICK FOR MENU</h1>
                         <p><a href={menu1} target="_blank" >LUNCH</a></p>
                         <p><a href={menu2} target="_blank" >DINNER</a></p>
@@ -27,7 +27,7 @@ function Menu() {
                     <p>– From all of us at Buona Terra</p>
                 </section>
                 <div className="GlobalComponent1 Component2a" >
-                    <figure>
+                    <figure id="lunchmenu">
                         <h1>LUNCH MENU</h1>
                         <h2>BUONA TERRA <br /> SET MENU</h2>
                         <p>4 COURSE &emsp; $118 <br /><br />
@@ -38,12 +38,12 @@ function Menu() {
                         <p>5 COURSE &emsp; FROM $178 <br /> <br />
                             LUNCH EXPERIENCE WINE PAIRING <br /> FROM $168 PER PERSON</p>
                         <span>MENU WILL CHANGE BASED OF SEASONAL AND  AVAILABLE DAILY  INGREDIENTS, AND IS CONSIDERED FOR ALL TABLE</span>
-                        <button>VIEW LUNCH MENU</button>
+                        <button><a href={menu1} target="_blank" >VIEW LUNCH MENU</a></button>
                         <span>Prices are subject to service charge & prevailing government taxes</span>
                     </figure>
                 </div>
                 <div className="GlobalComponent1 Component3a" >
-                    <figure>
+                    <figure id="dinnermenu">
                         <h1>DINNER MENU</h1>
                         <h2>LEAVE IT TO CHEF LUCCHI   <br /> BUONA TERRA EXPERIENCE</h2>
                         <p>5 COURSE ONWARDS &emsp; FROM $228</p>
@@ -52,7 +52,7 @@ function Menu() {
                             <span>OPTION OF NATURAL WINE AVAILABLE</span>
                             <br />
                             WHISKY FLYER 1960/70/80/90 <br /> FROM $398 PER PERSON</p>
-                        <button>VIEW DINNER MENU</button>
+                        <button><a href={menu2} target="_blank" >VIEW DINNER MENU</a></button>
                         <span>Prices are subject to service charge & prevailing government taxes</span>
                     </figure>
                 </div>
@@ -64,7 +64,7 @@ function Menu() {
                     <p>– From all of us at Buona Terra</p>
                 </section>
                 <div className="GlobalComponent1 Component4a" >
-                    <figure>
+                    <figure id="winemenu">
                         <h1>CARTA DEI VINI</h1>
                         <p>Italy’s wines are among the most distinctive and best-loved in the world. Buona Terra boasts a collection of over 250 labels including vintages and limited bottles that are rarely available commercially, earning the restaurant recognition among the 5 top wine lists for Italian wines in Singapore.<br /><br />
 
@@ -73,7 +73,7 @@ function Menu() {
                             At Buona Terra, product passion combines with expert curation and cheerful sharing to make wine-drinking an act of sheer enjoyment.
 
                         </p>
-                        <button>view wine menu</button>
+                        <button><a href={menu3} target="_blank" >view wine menu</a></button>
                     </figure>
                 </div>
 

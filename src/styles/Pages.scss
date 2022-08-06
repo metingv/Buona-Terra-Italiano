@@ -109,9 +109,8 @@
                width: clamp(120px, 38.54vw ,375px);
               }
             img{
-                width: 100%;       
-                height: 250px;        
-                object-fit: cover;
+                width: 100%;                    
+                object-fit: contain;
             }
             .text{
                 height: 100px;
@@ -128,6 +127,9 @@
                 overflow: hidden;
                 padding:  15px;
                 color:#fff;
+                @media screen and (max-width:760px) {
+                   font-size: 11px;
+                   }
                 .title{
                     font-family: "CormorantGaramond-Medium";
                     margin-bottom: 5px;

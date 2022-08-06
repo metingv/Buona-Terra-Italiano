@@ -184,6 +184,12 @@ body {
     -o-transition: all 0.4s ease-out;
     -ms-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
+    a{
+      color: #a99a6f; 
+      &:hover {
+        color: #fff;
+      }
+    }
 
     &:hover {
       color: #fff;

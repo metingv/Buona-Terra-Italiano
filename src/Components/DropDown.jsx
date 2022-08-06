@@ -1,6 +1,8 @@
 /* eslint-disable */
 import { useState } from 'react'
-
+import {
+  Link
+} from "react-router-dom";
 
 
 export default function DropDown({toggle}) {
@@ -23,8 +25,8 @@ export default function DropDown({toggle}) {
     <>
       <div className={`dropDown`} style={toggle ? defaultStyle : ToggleStyle }  >
         <ul>
-          <li>About</li>
-          <li> Menu
+          <li> <Link to="/about">About</Link></li>
+          <li>  Menu
             <div onClick={handleToggle}>
               {
                 toggle1 ? <i class="material-symbols-outlined" >
@@ -47,9 +49,9 @@ export default function DropDown({toggle}) {
             </ul>      
           }
             
-          <li>Gallery</li>
-          <li>Accolades</li>
-          <li>Contact</li>
+          <li> <Link to="/gallery">Gallery</Link></li>
+          <li> <Link to="/accolades">Accolades</Link></li>
+          <li> <Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </>

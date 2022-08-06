@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import {
   Link
 } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import Audio from "./Audio"
 import MobileNavbar from './MobileNavbar';
 
@@ -49,10 +50,10 @@ function Navbar() {
                 return (<li>
                        <Link to={menu.link}><a href>{menu.name}</a></Link>
                         <ul className="submenu">
-                          <li><a>OUR MENU </a></li>
-                          <li><a>LUNCH MENU </a></li>
-                          <li><a>DINNER MENU </a></li>
-                          <li><a className='noborder'>WINE MENU </a></li>
+                          <li><HashLink to="/menu/#ourmenu">OUR MENU</HashLink></li>
+                          <li><HashLink to="/menu/#lunchmenu">LUNCH MENU</HashLink></li>
+                          <li><HashLink to="/menu/#dinnermenu">DINNER MENU</HashLink></li>
+                          <li><HashLink to="/menu/#winemenu" className='noborder'>WINE MENU</HashLink></li>
                         </ul>
                 </li>)
               })
