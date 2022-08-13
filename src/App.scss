@@ -34,6 +34,11 @@ body {
 }
 
 @font-face {
+  font-family: 'CormorantGaramond-Regular';
+  src: local('CormorantGaramond-Regular'), url(../CormorantGaramondFonts/CormorantGaramond-Regular.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'CormorantGaramond-MediumItalic';
   src: local('CormorantGaramond-MediumItalic'), url(../CormorantGaramondFonts/CormorantGaramond-MediumItalic.ttf) format('truetype');
 }
@@ -43,7 +48,7 @@ body {
   padding: 100px 5%;
   text-align: center;
   position: relative;
-  background:  #E6ECEC;
+  background:  #fff;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -275,7 +280,6 @@ body {
       display: none!important;
     }
 }
-
 
 
 

@@ -69,6 +69,7 @@
 }
 
 .Contact{
+ 
     header{
         background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/reservation-banner.jpg"); 
         background-position: center; 
@@ -76,6 +77,79 @@
         background-size: cover;  
         height: 450px;
         position: relative;
+    }
+    .figure{
+        margin-top: 25px;
+        background: #fff;
+        padding: 40px 30px;
+        @media screen and (max-width:623px) {
+           padding: 40px 15px;
+        }
+        span{
+            font-family: CormorantGaramond-Regular;
+            color:#96875D;
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e8e8e8;
+            &:last-child{
+                border-bottom: 0px solid #e8e8e8;
+                font-family: "Abel",Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+        form{
+            margin: 25px 0px;
+            display: grid;
+            grid-template-columns: repeat(1,auto);
+            grid-gap:25px;
+            color: #677373;
+            font-size: 14px;
+            label{
+                text-align: left;
+                margin: 0px;
+                margin-bottom: -15px;
+                // border:1px solid red;
+            }
+            textarea{
+                border: 1px solid #e8e8e8;
+                color: #677373;
+                padding: 4px 15px;
+                height: 100px;
+                resize: none;
+            }
+            input{
+                padding: 4px 15px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid #e8e8e8;
+                width: 425px;
+                height: 36px;
+                color: #677373;
+                @media screen and (max-width:623px) {
+                    width: clamp(260px, 68vw ,425px);
+                }
+                &:focus {
+                    border: 1px solid #96875D;
+                  }
+                  &::-webkit-input-placeholder { /* Edge */
+                    color: #677373;
+                  }                  
+                  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #677373;
+                  }                 
+                  &::placeholder {
+                    color: #677373;
+                  }
+            }
+        }
+    }
+    iframe{
+        width: 100%;
+        height: 600px;
+        margin: 0px;
     }
        
 }
@@ -173,4 +247,23 @@
         background-image: url("https://www.buonaterra.com.sg/wp-content/uploads/2018/11/wine-menu-bg-e1546502789529.jpg"); 
     }
   
+}
+
+.Sended{
+    header{
+        background-image: url("https://images.unsplash.com/photo-1526554850534-7c78330d5f90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFpbHxlbnwwfHwwfHw%3D&w=1000&q=80"); 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        height: 450px;
+        position: relative;
+    }
+    .th{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 30px;
+        color:#fff;
+    }
 }

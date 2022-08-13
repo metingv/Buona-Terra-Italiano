@@ -8,7 +8,7 @@
   padding: 20px 50px;
   font-family: CormorantGaramond-SemiBoldItalic;
   width: 100%;
-
+  z-index: 3;
   @media screen and (max-width: 956px) {
     padding: 20px 25px;
   }
@@ -466,14 +466,6 @@
     height: 80px;
     object-fit: contain;
   }
-
-  h1 {
-    &::before {
-      top: 120%;
-      left: 48%;
-    }
-  }
-
   p {
     padding: 0% 5%;
   }
@@ -485,21 +477,10 @@
   figure{
     padding: 70px 60px;
   }
-  h1{
-    &::before{
-      top: 140%;
-      left: 38%;
-    }
-  }
+ 
 }
 
 .Component3 {
-  h1 {
-    &::before {
-      top: 120%;
-      left: 48%;
-    }
-  }
 
   button {
     width: 150px !important;
