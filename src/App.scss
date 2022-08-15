@@ -43,6 +43,15 @@ body {
   src: local('CormorantGaramond-MediumItalic'), url(../CormorantGaramondFonts/CormorantGaramond-MediumItalic.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: local('NotoSans-Regular'), url(../NotoSansFonts/NotoSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NotoSans-SemiBold';
+  src: local('NotoSans-SemiBold'), url(../NotoSansFonts/NotoSans-SemiBold.ttf) format('truetype');
+}
+
 
 .GlobalComponent{
   padding: 100px 5%;
@@ -280,6 +289,5 @@ body {
       display: none!important;
     }
 }
-
 
 

@@ -13,7 +13,7 @@ import  Gallery from './Pages/Gallery';
 import  Accolades from './Pages/Accolades';
 import  Contact from './Pages/Contact';
 import  Home from './Pages/Home';
-import  Sended from './Pages/Sended';
+import  Reservation from './Pages/Reservation';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
              <Route path="/gallery" element={<Gallery />} />
              <Route path="/accolades" element={<Accolades />} />
              <Route path="/contact" element={<Contact />} />
-             <Route path="/sended" element={<Sended />} />
+             <Route path="/reservation" element={<Reservation />} />
         </Routes>
     </BrowserRouter>
   );
