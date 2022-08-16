@@ -312,19 +312,21 @@
         }
 
         .box {
-            width: 500px;
+            width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
             align-items: space-between;
             justify-content: space-between;
             border: 1px solid #ededed;
-            @media screen and (max-width: 600px) {
-                width: 400px;        
-            }
-            @media screen and (max-width: 450px) {
-                width: 280px;        
-            }
+              @media screen and (max-width: 1145px) {
+                width: 70%;        
+               }
+               @media screen and (max-width: 768px) {
+                width: 90%;        
+               }
+    
+         
 
             .header {
                 background-color: #0C4A4F;
@@ -437,50 +439,51 @@
                     }
                 }
             }
-            .TabContent{
-                margin: 0px 30px;
+            .TabContent{             
                 padding: 25px;
-                border: 1px solid #d4d4d4;
                 @media screen and (max-width: 600px) {
                     padding: 0px;
                     border:none;
               }
                 .tab1{
+                    padding: 25px;
+                    border: 1px solid #d4d4d4;
+                    display: grid;
+                    flex-direction: column;
+                    grid-gap:25px;
+                    @media screen and (max-width: 600px) {
+                        border: none;
+                  }
                     .inputs{
                         display: grid;
-                        justify-content: center;
                         align-items: center;
-                        grid-template-columns: repeat(2,auto);
-                        grid-gap: 10px 25px;
-                        @media screen and (max-width: 600px) {
-                            grid-template-columns: repeat(1,auto);      
+                        justify-content: space-between;
+                        grid-template-columns: repeat(2,1fr);
+                        grid-gap: 15px 25px;
+                        @media screen and (max-width: 768px) {
+                            grid-template-columns: repeat(1,1fr);
                             grid-gap: 10px 0px;
+                            
                         }
                     
                     }
                       input[type="date"]{
-                        border: 1px solid #d4d4d4;
-                        width: 180px;
+                        border: 1px solid #d4d4d4;               
                         height: 32px;
                         padding: 5px 15px;
                         color:#2b2a29;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
                         text-transform: capitalize;
                         font-family:  'NotoSans-Regular';
-                        @media screen and (max-width: 600px) {
-                            width: 280px;
-                      }
+            
               
                         
                       }
                     .ListBox{
-                        position: relative;
-                        .ListboxButton{
+                        position: relative;                   
+                        .ListboxButton{                     
+                            width: 100%;
                             font-family:  'NotoSans-Regular';
                             border: 1px solid #d4d4d4;
-                            width: 180px;
                             height: 32px;
                             padding: 5px 15px;
                             color:#2b2a29;
@@ -488,9 +491,6 @@
                             justify-content: space-between;
                             align-items: center;
                             text-transform: capitalize;
-                            @media screen and (max-width: 600px) {
-                                  width: 280px;
-                            }
                             &:hover{
                                 background: transparent;
                             }
@@ -523,9 +523,8 @@
                                 }
                             }                       
                         }
-                    }
+                    } 
                     .overflowdiv{
-                        margin-top: 25px;
                         background: #ededed;
                         font-size: 12px;
                         padding: 25px;
@@ -536,11 +535,10 @@
                             width: 100%;
                       }               
                     }
-                    input[type="checkbox"]{
-                        margin: 25px 0px;              
-                    }
                     #agreelabel{
-                        font-size: 12px;
+                        font-size: 11px;
+                      
+                        
                     }
                     #nextbutton{
                         width: 100%;
@@ -600,7 +598,12 @@
                         margin-top: 25px;
                         width: 100%;
                         display: flex;
-                        justify-content: space-between;
+                        grid-gap: 15px 25px;
+                        justify-content: center;
+                        align-items: center;
+                        @media screen and (max-width: 600px) {
+                           flex-direction: column;
+                      }
                         button{
                             border: none;
                             font-size: 14px;
@@ -610,6 +613,7 @@
                             background: #0C4A4F;
                             color:#fff;
                             text-transform: capitalize;
+                          
                         }
                     }
                 }

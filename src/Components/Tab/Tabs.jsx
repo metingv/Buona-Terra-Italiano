@@ -1,5 +1,4 @@
 import { Fragment, useState, useEffect, useRef } from "react";
-import TabNavItem from "./TabNavItem";
 import TabContent from "./TabContent";
 import { Listbox } from '@headlessui/react'
 import emailjs from "emailjs-com";
@@ -231,9 +230,11 @@ const Tabs = () => {
               • For a concise dining experience, we are offering a full course menu at the restaurant. Feel free to get in touch with us for customisation of our full course menu.<br />
               • Special requests are not guaranteed and are subject to availability and restaurant discretion. Notes stating an alternative timing or party-size will not be accommodated.<br />
             </div>
-
+             
+             <div>
             <input type="checkbox" id="agree" name="agree" value="agree" onChange={onChangeChechbox} />
-            <label for="agree" id="agreelabel"> I have read and agree to the above terms and conditions. </label><br />
+            <label for="agree" id="agreelabel"> I have read and agree to the above terms and conditions. </label>
+            </div>
             <button id="nextbutton" onClick={() => setActiveTab("tab2")} ref={button}  >NEXT</button>
           </div>
         </TabContent>
