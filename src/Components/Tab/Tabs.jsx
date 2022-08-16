@@ -79,16 +79,16 @@ const Tabs = () => {
     setAgree(false)
     setScaleValue("scaleX(0%)")
 
-    if (activeTab == "tab1") {
+    if (activeTab === "tab1") {
       setScaleValue("scaleX(0%)")
       li1.current.classList.add("active")
       li2.current.classList.remove("active")
     }
-    else if (activeTab == "tab2") {
+    else if (activeTab === "tab2") {
       setScaleValue("scaleX(50%)")
       li2.current.classList.add("active")
     }
-    else if (activeTab == "tab3") {
+    else if (activeTab === "tab3") {
       setScaleValue("scaleX(100%)")
       li3.current.classList.add("active")
     }
