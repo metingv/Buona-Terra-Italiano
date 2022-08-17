@@ -4,7 +4,6 @@ import {
   Link
 } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-import Audio from "./Audio"
 import MobileNavbar from './MobileNavbar';
 import img from "../imgs/loqo.png"
 
@@ -73,7 +72,6 @@ function Navbar() {
         )
         }
         <figure>
-          <Audio />
           <Link to="/reservation"><button>Reservation</button></Link>
         </figure>
       </div>

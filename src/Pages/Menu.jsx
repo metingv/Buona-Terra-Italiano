@@ -4,13 +4,7 @@ import Footer from '../Components/Footer'
 import menu1 from '../docs/menu.pdf' 
 import menu2 from '../docs/menu2.pdf' 
 import menu3 from '../docs/menu3.pdf' 
-import { useEffect } from 'react'
-import { useLocation } from "react-router-dom";
 function Menu() {
-    const { pathname } = useLocation();
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, [pathname]);
     return (
         <>
             <div className="Menu">

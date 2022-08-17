@@ -1,7 +1,7 @@
 import img1 from "../imgs/menu-img1.jpg"
 import img2 from "../imgs/menu-img2.jpg"
 import img3 from "../imgs/menu-img3.jpg"
-
+import { HashLink } from 'react-router-hash-link';
 
 export default function Component3() {
     return (
@@ -15,7 +15,7 @@ export default function Component3() {
                     <img src={img2}  alt="" />
                     <img src={img3}  alt="" />
                     </figure>
-                <button>View Blog</button>
+              <HashLink to="/blog#">  <button>View Blog</button> </HashLink>
             </div>
         </>
     );

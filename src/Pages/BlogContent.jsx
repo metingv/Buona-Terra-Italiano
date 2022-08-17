@@ -1,32 +1,44 @@
 import { useState ,useEffect} from 'react'
 import { useParams } from "react-router-dom";
 import  axios  from "axios"
+import Navbar from "../Components/Navbar";
+import Footer from '../Components/Footer'
+import { Markup } from "interweave"
 
 function BlogContent() {
-    const [inputs, setInputs] = useState([]);
+    const [info, setInfo] = useState({});
 
     let { id } = useParams();
      
       useEffect(() => {
-        getUser();
+        getInfo();
         console.log(id)
     }, []);
 
-    function getUser() {
+    function getInfo() {
         axios.get(`http://localhost/www.buonaterraitaliona.com/api/${id}`).then(function(response) {
             console.log(response.data);
-            setInputs(response.data);
+            setInfo(response.data);
         });
     }
     
 return (
-        <>
+        <div className="BlogContent">
+            <header>
+                <Navbar />
+            </header>
        <section>
-        bloff
+         <h1>
+            {info.header} <br />
+            {info.header1}
+         </h1>
+         <img src={info.img}  alt={info.alt} />
+         <span> <Markup content={info.content} /></span>
+         
        </section>
 
-  
-        </>
+       <Footer />
+        </div>
     );
 }
 

@@ -767,8 +767,47 @@
             }
         }
     }
+}
 
+.BlogContent{
 
+    header {
+        background-image: url("https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        position: relative;
+    }
 
+section{
+    padding: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 50px;
 
+    h1{
+        font-family: CormorantGaramond-BoldItalic;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-size: 40px;
+        color: #96875d;
+        text-align: center;
+    }
+    img{
+        justify-self: center;
+        width: 600px;
+        object-fit: cover;
+    }
+    span{
+        font-family: "Abel";
+        font-size: 25px;
+        line-height: 1.7;
+        width:45%;
+        justify-self: center;
+    }
+}
+
+   
 }
