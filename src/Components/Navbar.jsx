@@ -70,7 +70,7 @@ function Navbar() {
         }
         <figure>
           <Audio />
-          <button><Link to="/reservation">Reservation</Link></button>
+          <Link to="/reservation"><button>Reservation</button></Link>
         </figure>
       </div>
     </>
