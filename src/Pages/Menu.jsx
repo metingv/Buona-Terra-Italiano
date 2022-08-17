@@ -8,7 +8,7 @@ function Menu() {
     return (
         <>
             <div className="Menu">
-                <header>
+                <header >
                     <Navbar />
                 </header>
                 <div className="GlobalComponent1 Component1a" >

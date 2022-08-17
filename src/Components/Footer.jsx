@@ -1,10 +1,12 @@
+import img from "../imgs/loqo.png"
+
 function Footer() {
     return (
         <>
             <div className='Footer'>
                 <div className='FooterTop'>
                     <figure>
-                        <img src={"../imgs/loqo.png"} alt="buonaterraitaliano" />
+                        <img src={img} alt="buonaterraitaliano" />
                     </figure>
                     <figure>
                         <h1>OPENING HOURS</h1>

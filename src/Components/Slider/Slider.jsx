@@ -56,7 +56,7 @@ export default function Slider() {
                         className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
                         <img
-                            src={`/Imgs/img${index + 1}.jpg`} alt=""
+                            src={require(`../../imgs/img${index + 1}.jpg`)} alt=""
                         />
                     </div>
                 )

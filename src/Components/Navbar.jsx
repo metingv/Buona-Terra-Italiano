@@ -6,6 +6,7 @@ import {
 import { HashLink } from 'react-router-hash-link';
 import Audio from "./Audio"
 import MobileNavbar from './MobileNavbar';
+import img from "../imgs/loqo.png"
 
 function Navbar() {
   const [matches, setMatches] = useState(
@@ -42,7 +43,7 @@ function Navbar() {
     <>
 
       <div className="Navbar">
-        <Link to="/"> <img src={"../imgs/loqo.png"} alt="loqo"></img>   </Link>
+        <Link to="/"> <img src={img} alt="loqo"></img>   </Link>
         {!matches && (
           <ul>
             {

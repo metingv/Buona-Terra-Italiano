@@ -10,7 +10,7 @@ function Accolades() {
             text: " 35° in 50 Best Italian Restaurants in The World"
         },
         {
-            src: "https://www.buonaterra.com.sg/wp-content/gallery/accolades/50BEST-DISCOVERY-MARK-BLACK-HIGH-RES.png",
+            src: "https://i.ibb.co/yBH2KBy/50-BEST-DISCOVERY-MARK-BLACK-HIGH-RES.png",
             title: "50 Best Discovery",
             text: "Listed on 50 Best Discovery"
         },
@@ -20,7 +20,7 @@ function Accolades() {
             text: "Award 1 Star, 2021"
         },
         {
-            src: "https://www.buonaterra.com.sg/wp-content/gallery/accolades/BT_Michelin2019.jpg",
+            src: "https://i.ibb.co/t3bHb96/BT-Michelin2019.jpg",
             title: "Singapore Michelin Guide",
             text: " Debut 1 Star, 2019"
         },
@@ -45,22 +45,22 @@ function Accolades() {
             text: "Singapore Best Restaurants 2014, 2017, 2019"
         },
         {
-            src: "https://www.buonaterra.com.sg/wp-content/gallery/accolades/T-DiningLogo_1819-262-x-256-1.jpg",
+            src: "https://i.ibb.co/6D8HZ1F/T-Dining-Logo-1819-262-x-256-1.jpg",
             title: "Singapore Tatler T Dining Award",
             text: "Regional Best Restaurants 2014"
         },
         {
-            src: "https://www.buonaterra.com.sg/wp-content/gallery/accolades/TRG-2017-262-x-256.jpg",
+            src: "https://i.ibb.co/ncdhkTW/TRG-2017-262-x-256.jpg",
             title: "Wine & Dine Singapore’s Top Restaurants ",
             text: "One Star (2015), Two Stars (2016)"
         },
         {
-            src: "https://www.buonaterra.com.sg/wp-content/gallery/accolades/accolade-img6.jpg",
+            src: "https://i.ibb.co/BfxrJqN/accolade-img6.jpg",
             title: "RAS Epicurean Star Award",
             text: "Best Of The Best Fine Dining 2016"
         },
         {
-            src: "https://www.buonaterra.com.sg/wp-content/gallery/accolades/thumbs_accolade-img6-262-X-256.jpg",
+            src: "https://i.ibb.co/BfxrJqN/accolade-img6.jpg",
             title: "RAS Epicurean Star Award",
             text: "Best Of The Western Fine Dining 2016"
         }

@@ -1,7 +1,7 @@
 import Navbar from "../Components/Navbar";
 import Footer from '../Components/Footer'
 import Tabs from "../Components/Tab/Tabs";
-
+import img from "../imgs/reservationimg.jpg"
 function Reservation() {
     return (
         <>
@@ -12,7 +12,7 @@ function Reservation() {
                 <section className="Globalcss GlobalComponent">
                     <h1>Reservation</h1>
                     <div className="figure">
-                        <img src="../imgs/reservationimg.jpg" alt="" />
+                        <img src={img} alt="" />
                         <div className="box">
                             <div className="header">
                                 <img className="headerimg" alt="" src="https://static.chope.co/uploads/2018/03/Buona_Terra_Widget_Logo_jpg_1521547887.jpg?version=170859" />

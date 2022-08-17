@@ -1,3 +1,7 @@
+import img1 from "../imgs/menu-img1.jpg"
+import img2 from "../imgs/menu-img2.jpg"
+import img3 from "../imgs/menu-img3.jpg"
+
 
 export default function Component3() {
     return (
@@ -7,9 +11,9 @@ export default function Component3() {
                 <p>Steeped in strong Italian roots, our desire is to bring you through a journey of new tastes combining traditional ingredients <br />
                     with creative and modern culinary techniques.</p>
                     <figure>
-                    <img src="../imgs/menu-img1.jpg"  alt="" />
-                    <img src="../imgs/menu-img2.jpg"  alt="" />
-                    <img src="../imgs/menu-img3.jpg"  alt="" />
+                    <img src={img1}  alt="" />
+                    <img src={img2}  alt="" />
+                    <img src={img3}  alt="" />
                     </figure>
                 <button>View Gallery</button>
             </div>
