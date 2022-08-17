@@ -3,7 +3,6 @@ import Footer from '../Components/Footer'
 function Gallery() {
     return (
         <>
-            <Navbar />
             <div className="Gallery">
                 <header>
                     <Navbar />

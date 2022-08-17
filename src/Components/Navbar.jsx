@@ -21,9 +21,13 @@ function Navbar() {
       name: "Menu",
       link: "/menu"
     },
+    // {
+    //   name: "Gallery",
+    //   link: "/gallery"
+    // },
     {
-      name: "Gallery",
-      link: "/gallery"
+      name: "Blog",
+      link: "/blog"
     },
     {
       name: "Accolades",

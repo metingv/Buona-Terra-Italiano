@@ -15,7 +15,7 @@ export default function Component3() {
                     <img src={img2}  alt="" />
                     <img src={img3}  alt="" />
                     </figure>
-                <button>View Gallery</button>
+                <button>View Blog</button>
             </div>
         </>
     );
