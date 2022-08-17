@@ -8,6 +8,10 @@ function Gallery() {
                 <header>
                     <Navbar />
                 </header>
+                <section className="Globalcss GlobalComponent">
+                <h1>Gallery</h1>
+         
+                </section>
 
             </div>
             <Footer />
