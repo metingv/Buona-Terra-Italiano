@@ -705,6 +705,9 @@
             font-size: 40px;
             color: #96875d;
             text-align: center;
+            @media screen and (max-width: 798px) {
+                font-size: 30px;
+            }
         }
 
         .items {
