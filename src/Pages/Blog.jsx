@@ -1,9 +1,11 @@
+/* eslint-disable */
 import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import axios from "axios"
 import { Markup } from "interweave"
 import Navbar from "../Components/Navbar";
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet';
 
 function Blog() {
     const [news, setNews] = useState([]);
@@ -19,6 +21,13 @@ function Blog() {
     }
     return (
         <div className='Blog'>
+            <Helmet>    
+                    <title>Italian Cuisine Blog</title>
+                    <meta name="description" content="Italian Cuisine" />
+                    <meta name="theme-color" content="#008f68" />
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8308453477166056"
+                        crossorigin="anonymous"></script>               
+            </Helmet>
             <header>
                 <Navbar />
             </header>
