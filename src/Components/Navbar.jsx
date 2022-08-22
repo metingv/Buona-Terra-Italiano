@@ -9,7 +9,7 @@ import img from "../imgs/loqo.png"
 
 function Navbar() {
   const [matches, setMatches] = useState(
-    window.matchMedia('(max-width: 768px)').matches
+    window.matchMedia('(max-width: 828px)').matches
   )
   const [menu] = useState([
     {
@@ -20,10 +20,10 @@ function Navbar() {
       name: "Menu",
       link: "/menu"
     },
-    // {
-    //   name: "Gallery",
-    //   link: "/gallery"
-    // },
+    {
+      name: "Gallery",
+      link: "/gallery"
+    },
     {
       name: "Blog",
       link: "/blog"
@@ -39,7 +39,7 @@ function Navbar() {
   ])
   useEffect(() => {
     window
-      .matchMedia('(min-width: 768px)')
+      .matchMedia('(min-width: 828px)')
       .addEventListener('change', (e) => setMatches(e.matches))
   }, [])
   return (

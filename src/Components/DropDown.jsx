@@ -48,7 +48,7 @@ export default function DropDown({toggle}) {
             }         
             </ul>      
           }
-            
+          <li> <Link to="/blog">Blog</Link></li>
           <li> <Link to="/gallery">Gallery</Link></li>
           <li> <Link to="/accolades">Accolades</Link></li>
           <li> <Link to="/contact">Contact</Link></li>

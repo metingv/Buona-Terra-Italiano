@@ -71,6 +71,108 @@
         height: 450px;
         position: relative;
     }
+    .slides{
+        display: grid;
+        align-items: flex-start;
+        justify-content: center;
+        grid-template-columns: repeat(2,auto);
+        grid-gap:25px;
+        margin-top: 50px;
+        z-index: 2;
+        @media screen and (max-width: 1024px) {
+            grid-gap:0px;  
+        }
+        button {
+          font-size: 35px;
+          border: 0px solid rgba(34, 34, 34, 0.287);
+          background: transparent;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          color: #c2ae77;
+        }
+        
+      
+      }
+      
+      .slider2 {
+      height: 500px;
+      width: 264px;
+      display: grid;
+      grid-template-columns: repeat(1,auto);
+      grid-gap:25px;
+      overflow: hidden;
+      position: relative;
+      @media screen and (max-width: 1024px) {
+        display: none;       
+      }
+      
+      img {
+        width:264px;
+        height: 150px;
+        object-fit: cover;
+        transition: transform 1s ease-in-out;
+        &:hover{
+            cursor: pointer;
+          }
+      }
+      
+      .active{
+        border: 4px solid #c2ae77
+      }
+      
+      .prev {
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+       .next {
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      
+      
+      }
+      
+      .slider1 {
+         overflow: hidden;
+         display: grid;
+         grid-template-columns: repeat(12,auto);
+         width:600px;
+         position: relative;
+         @media screen and (max-width: 1024px) {
+            width:100vw;
+         }
+      
+         
+        img {
+          width:600px;
+          height: 500px;
+          object-fit: cover;
+          transition: all 0.7s ease-in-out;
+          @media screen and (max-width: 1024px) {
+          object-fit: cover;
+           width:100vw;
+           height: 100vh;
+        }
+         
+         
+        }
+        .prev {
+          top: 50%;
+          left: 0%;
+          transform: translateY(-60%);
+        }
+         .next {
+          top: 50%;
+          right: 0%;
+          transform: translateY(-60%);
+        }
+       
+      }
 }
 
 .Contact {
