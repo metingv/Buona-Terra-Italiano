@@ -15,7 +15,7 @@ function Blog() {
     }, []);
 
     function getNews() {
-        axios.get('http://localhost/www.buonaterraitaliona.com/api/').then(response => {
+        axios.get('http://localhost/www.buonaterraitaliano.com/api/').then(response => {
             setNews(response.data);
         });
     }
