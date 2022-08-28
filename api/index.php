@@ -23,7 +23,7 @@ switch($method) {
    
         if(isset($path[4]) && is_numeric($path[4])) {
             // tek bir useri almaq ucun
-            $sql .= " WHERE id = :id";
+            $sql .= "WHERE id = :id";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':id', $path[4]);
             $stmt->execute();

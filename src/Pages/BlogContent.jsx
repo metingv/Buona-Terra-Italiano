@@ -13,12 +13,13 @@ function BlogContent() {
     let { header1 , id  } = useParams();
 
     useEffect(() => {
-        getInfo();
+        getInfo(); 
     }, []);
 
     function getInfo() {
-           // https://www.buonaterraitaliano.com/api/
-        axios.get(`http://localhost/www.buonaterraitaliano.com/api/${header1}/${id}`).then(function (response) {
+               // https://www.buonaterraitaliano.com/api/index.php/
+               // http://localhost/www.buonaterraitaliano.com/api/
+        axios.get(`https://www.buonaterraitaliano.com/api/index.php/${header1}/${id}`).then(function (response) {
             console.log(response.data);
             setInfo(response.data);
         });
