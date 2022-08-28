@@ -20,7 +20,7 @@ const Routes1 = () => {
              <Route path="/menu" element={<Menu />} />
              <Route path="/gallery" element={<Gallery />} />
              <Route path="/blog" element={<Blog />} />
-             <Route path="/blogcontent/:id/news" element={<BlogContent />} />
+             <Route path="/blogcontent/:header1/:id/news" element={<BlogContent />} />
              <Route path="/accolades" element={<Accolades />} />
              <Route path="/contact" element={<Contact />} />
              <Route path="/reservation" element={<Reservation />} />

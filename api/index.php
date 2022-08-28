@@ -21,11 +21,11 @@ switch($method) {
     case "GET":
         $sql = "SELECT * FROM news";
    
-        if(isset($path[3]) && is_numeric($path[3])) {
+        if(isset($path[4]) && is_numeric($path[4])) {
             // tek bir useri almaq ucun
             $sql .= " WHERE id = :id";
             $stmt = $conn->prepare($sql);
-            $stmt->bindParam(':id', $path[3]);
+            $stmt->bindParam(':id', $path[4]);
             $stmt->execute();
             $users = $stmt->fetch(PDO::FETCH_ASSOC);
         } else {

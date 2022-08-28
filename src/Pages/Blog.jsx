@@ -37,8 +37,8 @@ function Blog() {
                     {
                         news.map((data) => {
                             return (
-                                <Link to={`/blogcontent/${data.id}/news`}>
-                                    <div key={data.id} className='item'>
+                                <Link key={data.id} to={`/blogcontent/${data.header1}/${data.id}/news`}>
+                                    <div  className='item'>
                                         <img src={data.img} alt={data.alt} />
                                         <span className="dataheader">{data.header} <br />{data.header1}</span>
                                         <div className='content'>

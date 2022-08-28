@@ -38,36 +38,12 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-
+    
     @media screen and (max-width: 615px) {
       margin-bottom: -180px;
     }
 
-    .Audio {
-      width: 25px;
-      margin-right: 10px;
-
-      @media screen and (max-width: 445px) {
-        margin-right: 0px;
-      }
-
-      span {
-        color: rgba(170, 143, 19, 0.8);
-        font-size: 26px;
-
-        @media screen and (max-width: 956px) {
-          font-size: 22px;
-        }
-
-        @media screen and (max-width: 445px) {
-          font-size: 18px;
-        }
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
+  
 
     button {
       color: rgba(170, 143, 19, 0.8);
@@ -116,7 +92,9 @@
   ul {
     display: flex;
     margin-bottom: 20px;
-
+    @media screen and (max-width: 828px) {
+      display: none;
+    }
     li {
       //submenu
 
@@ -229,12 +207,15 @@
   width: 50%;
   margin-bottom: 20px;
   background: #a99a6f;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding: 10px 15px;
   color: #fff;
   position: relative;
+  @media screen and (max-width: 828px) {
+    display: flex;
+  }
   @media screen and (max-width: 615px) {
     margin-bottom: -180px;
     width: 60%;

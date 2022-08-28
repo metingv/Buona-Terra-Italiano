@@ -8,51 +8,51 @@ import MobileNavbar from './MobileNavbar';
 import img from "../imgs/loqo.png"
 
 function Navbar() {
-  const [matches, setMatches] = useState(
-    window.matchMedia('(max-width: 828px)').matches
-  )
+
   const [menu] = useState([
     {
+      id: "1",
       name: "About",
       link: "/about"
     },
     {
+      id: "2",
       name: "Menu",
       link: "/menu"
     },
     {
+      id: "3",
       name: "Gallery",
       link: "/gallery"
     },
     {
+      id: "4",
       name: "Blog",
       link: "/blog"
     },
     {
+      id: "5",
       name: "Accolades",
       link: "/accolades"
     },
     {
+      id: "6",
       name: "Contact",
       link: "/contact"
     }
   ])
-  useEffect(() => {
-    window
-      .matchMedia('(min-width: 828px)')
-      .addEventListener('change', (e) => setMatches(e.matches))
-  }, [])
+
   return (
     <>
 
       <div className="Navbar">
         <Link to="/"> <img src={img} alt="loqo"></img>   </Link>
-        {!matches && (
+
           <ul>
             {
               menu.map((menu) => {
-                return (<li>
-                       <Link to={menu.link}><a href>{menu.name}</a></Link>
+                return (<li key={menu.id} >
+                       <Link to={menu.link}><a href="true">{menu.name}</a></Link>
                         <ul className="submenu">
                           <li><HashLink to="/menu/#ourmenu">OUR MENU</HashLink></li>
                           <li><HashLink to="/menu/#lunchmenu">LUNCH MENU</HashLink></li>
@@ -63,14 +63,10 @@ function Navbar() {
               })
             }
           </ul>
-        )
-        }
-        {matches && (
-          <>
+     
+      
             <MobileNavbar />
-          </>
-        )
-        }
+   
         <figure>
           <Link to="/reservation"><button>Reservation</button></Link>
         </figure>

@@ -10,15 +10,14 @@ import { Helmet } from 'react-helmet';
 function BlogContent() {
     const [info, setInfo] = useState({});
 
-    let { id } = useParams();
+    let { header1 , id  } = useParams();
 
     useEffect(() => {
         getInfo();
-        console.log(id)
     }, []);
 
     function getInfo() {
-        axios.get(`http://localhost/www.buonaterraitaliano.com/api/${id}`).then(function (response) {
+        axios.get(`http://localhost/www.buonaterraitaliano.com/api/${header1}/${id}`).then(function (response) {
             console.log(response.data);
             setInfo(response.data);
         });
