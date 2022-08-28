@@ -17,13 +17,13 @@ const Routes1 = () => {
        <Routes>
              <Route path="/" element={<Home />} />
              <Route path="/about" element={<About />} />
-             <Route path="/menu" element={<Menu />} />
              <Route path="/gallery" element={<Gallery />} />
-             <Route path="/blog" element={<Blog />} />
-             <Route path="/blogcontent/:header1/:id/news" element={<BlogContent />} />
              <Route path="/accolades" element={<Accolades />} />
              <Route path="/contact" element={<Contact />} />
              <Route path="/reservation" element={<Reservation />} />
+             <Route path="/blog" element={<Blog />} />
+             <Route path="/blogcontent/:header1/:id/news" element={<BlogContent />} />
+             <Route path="/menu" element={<Menu />} />
         </Routes>
 
   )

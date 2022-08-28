@@ -1,0 +1,9 @@
+Go to NodeModules -> puppeteer -> lib -> LifecycleWatcher.js inside node modules, _createTimeoutPromise functions line 137 and just add
+
+return new Promise(() => {});
+
+With that you are removing the timeout.
+
+it should work, it's going to take more time to do it but it's working.
+
+related with react-snap
