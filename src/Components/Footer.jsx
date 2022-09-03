@@ -1,5 +1,5 @@
 import img from "../imgs/loqo.png"
-
+import { HashLink } from 'react-router-hash-link';
 function Footer() {
     return (
         <>
@@ -27,12 +27,18 @@ function Footer() {
 
                 </div>
                 <div className="FooterBottom">
-                Copyright © 2022 Buona Terra Italiano. All rights reserved.
+                Copyright © 2022 Buona Terra Italiano. All rights reserved.<br />
                 <div className="socialnav">
-                <i class="fa-brands fa-facebook-f"></i>
+               
+                <a href=" https://www.facebook.com/buonaterrasg/"> <i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/buonaterrasg/">  <i class="fa-brands fa-instagram"></i> </a>
                 </div>
+                <div className="Policy">
+                <HashLink to="/privacypolicy/#"><span>Privacy Policy</span></HashLink>
+                <HashLink to="/cookiespolicy/#"><span>Cookie Policy</span></HashLink>
                 </div>
+                </div>
+                
             </div>
         </>
     );

@@ -12,6 +12,9 @@ import {
   import  BlogContent from './Pages/BlogContent';
   import  Home from './Pages/Home';
   import  Reservation from './Pages/Reservation';
+  import  PrivacyPolicy from './Pages/Policy/PrivacyPolicy';
+  import  CookiesPolicy from './Pages/Policy/PrivacyPolicy1';
+
 const Routes1 = () => {
   return (
        <Routes>
@@ -24,6 +27,9 @@ const Routes1 = () => {
              <Route path="/blog" element={<Blog />} />
              <Route path="/blogcontent/:header1/:id/news" element={<BlogContent />} />
              <Route path="/menu" element={<Menu />} />
+             <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+             <Route path="/cookiespolicy" element={<CookiesPolicy />} />
+             
         </Routes>
 
   )

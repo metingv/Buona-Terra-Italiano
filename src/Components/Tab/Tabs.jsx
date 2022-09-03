@@ -231,7 +231,7 @@ const Tabs = () => {
               • Special requests are not guaranteed and are subject to availability and restaurant discretion. Notes stating an alternative timing or party-size will not be accommodated.<br />
             </div>
              
-             <div>
+            <div style={{zIndex: "5"}}>
             <input type="checkbox" id="agree" name="agree" value="agree" onChange={onChangeChechbox} />
             <label for="agree" id="agreelabel"> I have read and agree to the above terms and conditions. </label>
             </div>
@@ -248,7 +248,7 @@ const Tabs = () => {
               <input type="email" name="email" placeholder="email address" onChange={handleChange} pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}"  required />
               <input type="number" name="contact" placeholder="phone number" onChange={handleChange} required />
             </div>
-            <input type="checkbox" id="agree" name="agree" value="agree" onChange={onChangeChechbox} />
+            <input type="checkbox" id="agree" name="agree" value="agree" onChange={onChangeChechbox}  />
             <label for="agree" id="agreelabel"> <strong>Yes, I'd love to get updates, news and promotions from this restaurant! </strong></label><br />
             <div className="buttons">
           
@@ -259,7 +259,6 @@ const Tabs = () => {
             </form>
           </div>
         </TabContent>
-
 
         <TabContent id="tab3" activeTab={activeTab}>
         <div className="tab3">

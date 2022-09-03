@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 50px;
-  font-family: CormorantGaramond-SemiBoldItalic;
+  font-family: CormorantGaramond-BoldItalic;
   width: 100%;
   z-index: 3;
   @media screen and (max-width: 956px) {
@@ -46,7 +46,7 @@
   
 
     button {
-      color: rgba(170, 143, 19, 0.8);
+      color: rgba(170, 143, 19, 1);
       font-size: 17px;
       text-transform: uppercase;
       width: 170px;
@@ -54,7 +54,7 @@
       border: 1px solid rgba(170, 143, 19, 0.8);
       border-radius: 3px;
       background: none;
-      font-family: CormorantGaramond-SemiBoldItalic;
+      font-family: CormorantGaramond-BoldItalic;
 
       a{
         color: rgba(170, 143, 19, 0.8);
@@ -329,7 +329,7 @@
 
   .FooterTop {
     display: grid;
-    grid-gap: 20px 3%; // % bug oldu 20px etdim
+    grid-gap: 20px 20px; // % bug oldu 20px etdim
     grid-template-columns: repeat(4, auto);
     padding: 60px 40px 60px 40px;
 
@@ -413,13 +413,14 @@
     padding: 20px 0px;
     border-top: 1px solid #39393d;
     display: grid;
-    grid-gap: 20px 100px;
+    grid-gap: 10px 100px;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
     align-items: center;
 
     @media screen and (max-width: 698px) {
       grid-template-columns: repeat(1, auto);
+      font-size: 12px;
     }
 
     .socialnav {
@@ -443,6 +444,13 @@
         }
       }
     }
+  }
+  .Policy{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, auto);
   }
 }
 

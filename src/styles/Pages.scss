@@ -704,6 +704,11 @@
                         padding: 10px;
                     }
 
+                    #agree{
+                        z-index: 10!important;
+                        position: sticky;
+                    }
+
                     #agreelabel {
                         font-size: 12px;
                         padding: 0px 5px;
@@ -726,6 +731,7 @@
                             justify-content: space-between;
                             align-items: center;
                             text-transform: capitalize;
+                            z-index:10;
 
                             &:hover {
                                 background: transparent;
