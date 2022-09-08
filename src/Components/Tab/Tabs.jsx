@@ -92,6 +92,7 @@ const Tabs = () => {
       setScaleValue("scaleX(100%)")
       li3.current.classList.add("active")
     }
+    console.log(activeTab)
   }, [activeTab])
 
   const onChangeTimeValue = (e) => {
